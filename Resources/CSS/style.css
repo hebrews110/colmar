@@ -1,0 +1,86 @@
+html {
+  background-color: #F4P4F4;
+  font-size: 16px;
+}
+
+h1,
+h2,
+.nav {
+font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Prata', serif;
+}
+
+.container {
+  width: 960;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.desktop-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.name {
+  flex-grow: 10;
+}
+
+.nav {
+  flex-grow: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav a {
+  color: #373737;
+  font-weight: bold;
+}
+
+.color {
+  display: inline-block;
+  width: 16px;
+  height: 50px;
+  background-color: #C08283;
+}
+
+.colmar {
+  font-weight: 900;
+  color: #0d0d0d;
+  text-transform: uppercase;
+}
+
+.academy {
+  text-transform: uppercase;
+  color: #373737;
+  font-weight: 400;
+}
+
+.logo {
+    margin-left: 24px;
+}
+
+.nav .sign {
+  padding-right: 24px;
+}
+
+/* banner section */
+.banner img {
+  padding: 32px 24px;
+  width: 60%;
+  height: auto;
+}
+
+.banner {
+  background-color: #DCD0C0;
+}
