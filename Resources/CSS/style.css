@@ -14,10 +14,6 @@ p {
   font-family: 'Prata', serif;
 }
 
-.container {
-  width: 960;
-}
-
 .mobile {
   display: none;
 }
@@ -217,6 +213,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  width: 100%;
 }
 
 .first-row,
@@ -224,8 +221,9 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-content: space-between;
   margin: 32px;
+  width: 80%;
 }
 
 .course {
