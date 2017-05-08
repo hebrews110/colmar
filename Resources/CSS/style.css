@@ -195,6 +195,10 @@ h3 {
   padding-left: 20px;
 }
 
+.readmore a:hover {
+  text-shadow: 0 0 5px #C08283;
+}
+
 .info-bite img {
   width: 35%;
   height: 35%;
@@ -245,6 +249,14 @@ h3 {
 
 .course h3 {
   padding: 16px;
+}
+
+.course a {
+  text-decoration: none;
+}
+
+.course a:hover {
+box-shadow: 1px 1px 3px #373737;
 }
 
 /* end courses section */
