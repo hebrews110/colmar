@@ -199,3 +199,32 @@ h3 {
 }
 
 /* end information section*/
+
+/*start courses section*/
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.courses h2 {
+ font-size: 2.5rem;
+ padding: 32px;
+ text-align: center;
+}
+
+.first-row,
+.second-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 100px 16px 100px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
