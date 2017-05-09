@@ -87,6 +87,7 @@ a {
 .banner {
   display: flex;
   flex-direction: row;
+  margin-bottom: 32px;
 }
 
 .dark {
@@ -137,8 +138,9 @@ h3 {
   width: 100%;
 }
 
-.practice img {
-  padding: 32px 24px;
+.practice img,
+.practice .media-container {
+  padding: 0 24px 32px 24px;
   width: 94%;
   height: auto;
 }
@@ -175,17 +177,14 @@ h3 {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 40%;
-  padding-top: 26px;
 }
 
 .info-bite {
   display: flex;
   width: 100%;
-  margin: 5px;
-  padding: 10px;
 }
 
 .readmore {
@@ -202,6 +201,7 @@ h3 {
 .info-bite img {
   width: 35%;
   height: 35%;
+  padding: 16px;
 }
 
 /* end information section*/
@@ -219,7 +219,7 @@ h3 {
 .courses {
   display: flex;
   flex-direction: column;
-  margin: 32px 0;
+  margin-top: 32px;
   width: 100%;
 }
 
@@ -261,3 +261,18 @@ box-shadow: 1px 1px 3px #373737;
 }
 
 /* end courses section */
+
+/* start thesis section */
+
+.thesis {
+ font-size: 2.5rem;
+ padding: 32px;
+ text-align: center;
+}
+/* end thesis section -- find style in information section*/
+
+footer {
+  padding: 12px 24px 36px 24px;
+  border-top: 1px solid #DCD0C0;
+  margin-top: 32px;
+}
