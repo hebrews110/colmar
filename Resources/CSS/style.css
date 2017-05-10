@@ -7,13 +7,16 @@ html {
 
 h1,
 h2,
-h3
+h3,
 .nav {
 font-family: 'Open Sans', sans-serif;
+color: #373737;
+font-weight: 400;
 }
 
 p {
   font-family: 'Prata', serif;
+  color: #1a1a1a;
 }
 
 .mobile {
@@ -55,6 +58,7 @@ a {
   width: 16px;
   height: 50px;
   background-color: #C08283;
+  margin: 0 3px;
 }
 
 .colmar {
@@ -154,6 +158,8 @@ h3 {
   text-decoration: none;
   color: #C08283;
   font-weight: bold;
+  font-size: 1rem;
+  transition: all 300ms ease-in-out;
 }
 
 .practice {
@@ -192,10 +198,12 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   padding-left: 20px;
+  margin: 20px 0;
 }
 
 .readmore a:hover {
-  text-shadow: 0 0 5px #C08283;
+  text-shadow: 0 0 1px #C08283;
+  font-size: 1.1rem;
 }
 
 .info-bite img {
