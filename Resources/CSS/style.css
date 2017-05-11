@@ -17,7 +17,6 @@ h3,
 .nav {
 font-family: 'Open Sans', sans-serif;
 color: #373737;
-font-weight: 400;
 }
 
 p {
@@ -178,6 +177,7 @@ header img:hover {
   width: 80%;
   font-family: 'Prata', serif;
   margin-bottom: 50px;
+  transition: background-color 200ms ease-in-out;
 }
 
 @media only screen and (max-width: 960px) {
