@@ -276,11 +276,16 @@ h3 {
 .practice h2
  {
   font-size: 2.5rem;
+  text-align: left;
+  padding: 0 24px;
+  margin: 0;
+  width: 95%;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 900px) {
   .practice h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
