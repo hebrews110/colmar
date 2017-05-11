@@ -32,6 +32,18 @@ p {
   height: 50px;
 }
 
+@media only screen and (max-width: 760px) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;
+  }
+}
+
 .name {
   flex-grow: 10;
 }
@@ -82,10 +94,24 @@ a {
 }
 
 /* start here section */
-.banner img {
-  padding: 32px 24px;
+
+.banner .container {
+  margin: 32px 24px;
   width: 60%;
   height: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner .container {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.banner img {
+ width: 100%;
+ height: 100%;
 }
 
 .banner {
@@ -94,8 +120,25 @@ a {
   margin-bottom: 32px;
 }
 
+@media only screen and (max-width: 760px) {
+  .banner {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
 .dark {
   background-color: #DCD0C0;
+}
+
+.dark2 {
+  background-color: #DCD0C0;
+}
+
+@media only screen and (max-width: 760px) {
+ .dark2 {
+  background-color: #F4F4F4;
+}
 }
 
 .start {
@@ -104,7 +147,19 @@ a {
   align-content: center;
   justify-content: space-around;
   width: 40%;
-  padding: 80px 16px;
+  padding: 50px 16px;
+}
+
+@media only screen and (max-width: 960px) {
+  .start {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .start {
+    padding: 32px 16px;
+  }
 }
 
 .start a {
@@ -118,6 +173,14 @@ a {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 960px) {
+  .start a {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
 .start a:hover {
   background-color: #C08283;
 }
@@ -128,8 +191,44 @@ a {
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 960px) {
+  .start h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .start h1,
+  .start h3 {
+    margin: 16px auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .start {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .start a {
+    width: 60%;
+    margin: 8px auto 32px auto;
+    text-align: center;
+  }
+}
+
 h3 {
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 960px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 /*end start here section*/
@@ -142,16 +241,38 @@ h3 {
   width: 100%;
 }
 
+@media only screen and (max-width: 760px) {
+  .background {
+    flex-direction: column;
+  }
+}
+
 .practice img,
-.practice .media-container {
+.practice .video-container {
   padding: 0 24px 32px 24px;
   width: 94%;
   height: auto;
 }
 
+@media only screen and (max-width: 760px) {
+  .practice,
+  .practice img,
+  .practice h2,
+  .practice p,
+  .practice span {
+    display: none;
+  }
+}
+
 .practice h2
  {
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .practice h2 {
+    font-size: 2rem;
+  }
 }
 
 .readmore a {
@@ -188,9 +309,25 @@ h3 {
   width: 40%;
 }
 
+@media only screen and (max-width: 760px) {
+  .info {
+    margin: 16px;
+    width: 95%;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
 .info-bite {
   display: flex;
   width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  .info-bite {
+    flex-direction: column;
+  }
 }
 
 .readmore {
@@ -199,6 +336,38 @@ h3 {
   justify-content: space-around;
   padding-left: 20px;
   margin: 20px 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .readmore {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .readmore {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .readmore h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .readmore h3,
+  .readmore p,
+  .readmore a {
+    padding: 16px;
+  }
+  .readmore h3 {
+    font-size: 2rem;
+  }
+  .readmore a {
+    padding-bottom: 0;
+  }
 }
 
 .readmore a:hover {
@@ -212,16 +381,33 @@ h3 {
   padding: 16px;
 }
 
+@media only screen and (max-width: 760px) {
+  .info-bite img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  }
+}
 /* end information section*/
 
 /*start courses section*/
-.media-container {
+.media-container,
+.video-container {
   overflow: hidden;
 }
 .media-container img,
-.media-container video {
+.video-container video {
   display: block;
   width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  .media-container {
+    display: none;
+  }
+  .course p {
+    display: none;
+  }
 }
 
 .courses {
@@ -241,6 +427,13 @@ h3 {
 .second-row {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 760px) {
+  .first-row,
+  .second-row {
+    flex-direction: column;
+  }
 }
 
 .course {
@@ -268,6 +461,12 @@ h3 {
 box-shadow: 1px 1px 3px #373737;
 }
 
+@media only screen and (max-width: 760px) {
+  .course h3:hover {
+    box-shadow: 1px 1px 3px #373737;
+  }
+}
+
 /* end courses section */
 
 /* start thesis section */
@@ -277,6 +476,8 @@ box-shadow: 1px 1px 3px #373737;
  padding: 32px;
  text-align: center;
 }
+
+
 /* end thesis section -- find style in information section*/
 
 footer {
