@@ -278,8 +278,6 @@ h3 {
   font-size: 2.5rem;
   text-align: left;
   padding: 0 24px;
-  margin: 0;
-  width: 95%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -300,14 +298,13 @@ h3 {
 .practice {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 60%;
 }
 
 .practice span {
   font-family: sans-serif;
   color: #373737;
-  text-align: left;
+  padding-left: 24px
 }
 
 .practice p {
