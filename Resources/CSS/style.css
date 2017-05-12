@@ -86,8 +86,9 @@ a {
 
 .nav a:hover,
 header img:hover {
-  -webkit-box-shadow: 1px 1px 5px #C08283;
-          box-shadow: 1px 1px 5px #C08283;
+  -webkit-box-shadow: 2px 2px 5px #C08283;
+          box-shadow: 2px 2px 5px #C08283;
+
 }
 
 .color {
@@ -162,16 +163,6 @@ header img:hover {
 
 .dark {
   background-color: #DCD0C0;
-}
-
-.dark2 {
-  background-color: #DCD0C0;
-}
-
-@media only screen and (max-width: 760px) {
- .dark2 {
-  background-color: #F4F4F4;
-}
 }
 
 .start {
@@ -335,8 +326,11 @@ h3 {
   color: #C08283;
   font-weight: bold;
   font-size: 1rem;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .practice {
@@ -395,6 +389,12 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  border: 1px solid #DCD0C0;
+  transition: background-color .4s ease;
+}
+
+.info-bite:hover {
+  background-color: #DCD0C0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -457,12 +457,18 @@ h3 {
 .readmore a:hover {
   text-shadow: 0 0 1px #C08283;
   font-size: 1rem;
+  letter-spacing: .15rem;
+}
+
+.firefox  {
+  width: 9rem;
+  height: auto;
+  padding: 16px;
 }
 
 .info-bite img {
-  width: 35%;
-  height: 35%;
-  padding: 16px;
+  width: inherit;
+  height: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -557,11 +563,12 @@ h3 {
 .course a {
   text-decoration: none;
   color: #373737;
+  transition: all .2s ease;
 }
 
 .course a:hover {
--webkit-box-shadow: 1px 1px 3px #373737;
-        box-shadow: 1px 1px 3px #373737;
+-webkit-box-shadow: 2px 2px 4px #373737;
+        box-shadow: 2px 2px 4px #373737;
 }
 
 @media only screen and (max-width: 760px) {
