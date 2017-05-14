@@ -515,7 +515,7 @@ h3 {
 
 .courses h2 {
  font-size: 2.5rem;
- padding: 32px;
+ padding: 32px 0 16px 0;
  text-align: center;
 }
 
