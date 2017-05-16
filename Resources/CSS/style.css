@@ -292,8 +292,8 @@ h3 {
 
 .practice img,
 .practice .video-container {
-  padding-bottom: 32px;
-  width: 100%;
+  padding: 0 24px 32px 24px;
+  width: 94%;
   height: auto;
 }
 
@@ -311,7 +311,7 @@ h3 {
  {
   font-size: 2.5rem;
   text-align: left;
-  padding: 0;
+  padding: 0 24px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -347,10 +347,11 @@ h3 {
 .practice span {
   font-family: sans-serif;
   color: #373737;
+  padding-left: 24px
 }
 
 .practice p {
-  padding: 20px 0;
+  padding: 20px 24px;
   line-height: 1.4;
 }
 
@@ -369,7 +370,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  margin-left: 24px;
 }
 
 @media only screen and (max-width: 760px) {
